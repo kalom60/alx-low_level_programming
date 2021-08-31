@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int val, size;
+	char str[10] = "Holberton";
+	int val;
 
-	size = sizeof(str) / sizeof(int);
-	for (val = 0; val < size; val++)
+	for (val = 0; val < 9; val++)
 	{
 		_putchar(str[val]);
 	}
 	_putchar('\n');
+	
 	return (0);
 }
