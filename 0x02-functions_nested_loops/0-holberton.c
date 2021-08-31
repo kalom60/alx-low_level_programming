@@ -3,6 +3,8 @@
 /**
  * main - prints Holoberton as a message.
  *
+ * Description: Prints Holberton with _putchar
+ *
  * Return: ALways 0 (Success)
  */
 
