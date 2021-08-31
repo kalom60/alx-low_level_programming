@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char str[] = "Holberton\n";
+	char str[] = "_putchar\n";
 	char newstr;
 	int i = 0;
 
