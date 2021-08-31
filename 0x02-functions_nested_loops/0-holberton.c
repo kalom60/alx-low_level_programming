@@ -8,14 +8,16 @@
 
 int main(void)
 {
-	char str[] = "Holberton";
-	int val;
+	char str[] = "Holberton\n";
+	char newstr;
+	int i = 0;
 
-	for (val = 0; val < 9; val++)
+	while (i <= 9)
 	{
-		_putchar(str[val]);
+		newstr = str[i];
+		_putchar(newstr);
+		i++;
 	}
-	_putchar('\n');
 
 	return (0);
 }
