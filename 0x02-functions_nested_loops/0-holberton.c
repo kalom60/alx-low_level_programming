@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * main - prints Holoberton as a message.
+ * main - prints _putchar
  *
- * Description: Prints Holberton with _putchar
+ * Description: prints _putchar
  *
- * Return: ALways 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(void)
 {
-	char str[] = "_putchar";
-	char newstr;
+	char text[10] = "Holberton";
 	int i = 0;
 
-	while (i <= 9)
+	for (i = 0; i < 9; i++)
 	{
-		newstr = str[i];
-		_putchar(newstr);
-		i++;
+		_putchar(text[i]);
 	}
 	_putchar('\n');
 
