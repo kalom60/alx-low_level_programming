@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char str[] = "_putchar\n";
+	char str[] = "_putchar";
 	char newstr;
 	int i = 0;
 
@@ -20,6 +20,7 @@ int main(void)
 		_putchar(newstr);
 		i++;
 	}
+	_putchar('\n');
 
 	return (0);
 }
