@@ -2,7 +2,7 @@
 
 /**
  * _isupper - check if parameter is an uppercase char
- * @c: input char
+ * @c: input character
  * Return: 1 if its uppercase char or 0 if its not
  */
 
