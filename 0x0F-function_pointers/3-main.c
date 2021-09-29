@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - main file
@@ -11,16 +12,23 @@
 
 int main(int argc, char *argv[])
 {
-	int R;
+	register int num1, num2;
+
+	int (*funptr)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(99);
+		exit(98);
 	}
-
-	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", R);
-
+	funptr = get_op_func(argv[2]);
+	if (!funptr)
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	printf("%d\n", funptr(num1, num2));
 	return (0);
 }
