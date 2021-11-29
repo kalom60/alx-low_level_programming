@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -q --output-document=$PWD/random.so https://github.com/kalom60/alx-low_level_programming/raw/main/0x18-dynamic_libraries/random.so
-export LD_PRELOAD=$PWD/random.so
+wget -P /tmp/ https://raw.github.com/luischaparroc/holbertonschool-low_level_programming/master/0x18-dynamic_libraries/nrandom.so
+export LD_PRELOAD=/tmp/nrandom.so
