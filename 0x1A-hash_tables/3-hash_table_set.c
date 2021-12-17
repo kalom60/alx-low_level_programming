@@ -9,7 +9,8 @@
  * Return: head of the hash
  */
 
-hash_node_t *make_hash_node(hash_node_t **head, const char *key, const char *value)
+hash_node_t *make_hash_node(
+		hash_node_t **head, const char *key, const char *value)
 {
 	hash_node_t *gze;
 
