@@ -21,11 +21,11 @@ def island_perimeter(grid):
             if grid[a][b] == 1:
                 if (a - 1) == -1 or grid[a - 1][b] == 0:
                     p_meter += 1
-                if (a + 1) == nrows or grid[a + 1][b] == 0:
+                if (a + 1) == num_rows or grid[a + 1][b] == 0:
                     p_meter += 1
                 if (b - 1) == -1 or grid[a][b - 1] == 0:
                     p_meter += 1
-                if (b + 1) == ncolumns or grid[a][b + 1] == 0:
+                if (b + 1) == num_columns or grid[a][b + 1] == 0:
                     p_meter += 1
 
     return p_meter
