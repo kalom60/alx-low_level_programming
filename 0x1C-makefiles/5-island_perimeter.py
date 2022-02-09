@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" 
-Module that contains the island_perimeter function 
+"""
+Module that contains the island_perimeter function
 """
 
 
 def island_perimeter(grid):
-    """ 
+    """
     Function that returns the perimeter of
-    island described in grid 
+    island described in grid
     """
     p_meter = 0
 
